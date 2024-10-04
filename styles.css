@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    color: white;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Button Styles */
+  .btn-1 {
+    background-color: #3498db;
+    border-radius: 5px;
+  }
+  .btn-1:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-2 {
+    background-color: #e74c3c;
+    border-radius: 50px;
+  }
+  .btn-2:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-3 {
+    background-color: #2ecc71;
+    border-radius: 0;
+    border-radius: 75%;
+  }
+  .btn-3:hover {
+    background-color: #27ae60;
+  }
+  
+  .btn-4 {
+    background-color: #9b59b6;
+    position: relative;
+  }
+  .btn-4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #8e44ad;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  .btn-4:hover:before {
+    width: 0;
+  }
+  
+  .btn-5 {
+    background-color: #34495e;
+  }
+  .btn-5:hover {
+    letter-spacing: 2px;
+  }
+  
+  .btn-6 {
+    background-color: #f39c12;
+  }
+  .btn-6:hover {
+    background-color: #e67e22;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn-7 {
+    background-color: #e67e22;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-7:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d35400;
+    transition: all 0.3s ease;
+  }
+  .btn-7:hover:before {
+    top: 0;
+  }
+  
+  .btn-8 {
+    background-color: #1abc9c;
+    border-radius: 0;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  .btn-8:hover {
+    border-color: white;
+  }
+  
+  .btn-9 {
+    background-color: #2980b9;
+    text-transform: uppercase;
+  }
+  .btn-9:hover {
+    transform: rotate(10deg);
+  }
+  
+  .btn-10 {
+    background-color: #2c3e50;
+    border-radius: 10px;
+  }
+  .btn-10:hover {
+    background-color: #34495e;
+    padding: 10px 25px;
+  }
+  
+  .btn-11 {
+    background-color: #c0392b;
+    position: relative;
+  }
+  .btn-11:before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: top 0.3s ease;
+  }
+  .btn-11:hover:before {
+    top: 0;
+  }
+  
+  .btn-12 {
+    background-color: #27ae60;
+  }
+  .btn-12:hover {
+    background-color: #2ecc71;
+    letter-spacing: 1px;
+  }
+  
+  .btn-13 {
+    background-color: #9b59b6;
+  }
+  .btn-13:hover {
+    border: 2px solid white;
+    padding: 12px 28px;
+  }
+  
+  .btn-14 {
+    background-color: #f1c40f;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-14:hover {
+    color: black;
+  }
+  .btn-14:before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+  }
+  .btn-14:hover:before {
+    left: 0;
+  }
+  
+  .btn-15 {
+    background-color: #34495e;
+  }
+  .btn-15:hover {
+    background-color: #2c3e50;
+    transform: translateY(-5px);
+  }
+  
+  .btn-16 {
+    background-color: #e74c3c;
+    position: relative;
+  }
+  .btn-16:hover {
+    background-color: #c0392b;
+    transform: rotate(-3deg);
+  }
+  
+  .btn-17 {
+    background-color: #3498db;
+    border-radius: 5px;
+  }
+  .btn-17:hover {
+    box-shadow: 0 0 5px #2980b9, 0 0 15px #2980b9;
+  }
+  
+  .btn-18 {
+    background-color: #f39c12;
+  }
+  .btn-18:hover {
+    transform: skewX(20deg);
+  }
+  
+  .btn-19 {
+    background-color: #27ae60;
+  }
+  .btn-19:hover {
+    background-color: #2ecc71;
+    transform: rotateY(180deg);
+  }
+  
+  .btn-20 {
+    background-color: #9b59b6;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-20:before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  .btn-20:hover:before {
+    top: 0;
+  }  
